@@ -1,3 +1,7 @@
 .time-header{
   text-align: right;
+  
+}
+.time-header, strong{
+  color: #6d6d6d;
 }
