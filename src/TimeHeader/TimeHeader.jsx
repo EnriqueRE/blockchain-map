@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
-import './TimeHeader.css'
+import './TimeHeader.css';
+
 export class TimeHeader extends Component {
   render() {
     return (

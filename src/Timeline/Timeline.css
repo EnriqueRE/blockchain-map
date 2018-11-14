@@ -1,0 +1,52 @@
+ul.timeline {
+  list-style-type: none;
+  position: relative;
+}
+/* Line */
+ul.timeline:before {
+  content: ' ';
+  background: #4472c4;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400;
+}
+ul.timeline > li {
+  margin: 20px 0;
+  padding-left: 20px;
+}
+/* Round icons */
+ul.timeline > li:before {
+  content: ' ';
+  background: white;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #4472c4;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400;
+}
+
+.shipment-container{
+  text-align: left
+}
+
+.shipment-status{
+  font-weight: bold;
+  font-size: 1.2em;
+  margin: .2em 0;
+}
+.shipment-date{
+  font-size: .9em;
+  color: rgb(166,166, 166);
+  margin-bottom: .2em
+}
+.shipment-details{
+  font-size: .75em;
+  color: rgb(127,127, 127);
+  margin-bottom: .2em
+}
