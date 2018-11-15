@@ -32,13 +32,18 @@ ul.timeline > li:before {
 }
 
 .shipment-container{
-  text-align: left
+  text-align: left;
+  padding: .5em;
 }
 
 .shipment-status{
   font-weight: bold;
   font-size: 1.2em;
   margin: .2em 0;
+}
+
+.status-icon{
+  color: #0C5EA8
 }
 .shipment-date{
   font-size: .9em;
@@ -48,5 +53,26 @@ ul.timeline > li:before {
 .shipment-details{
   font-size: .75em;
   color: rgb(127,127, 127);
-  margin-bottom: .2em
+  margin-bottom: .2em;
+  font-style: italic
+}
+
+.shipment-container.container-warning{
+  background-color:#FBE5D6;
+}
+.shipment-container.container-warning > .shipment-status{
+  color:rgb(200,97,26);
+}
+.transaction-warning{
+  background: #F7ECE6;
+  padding: .2em .5em
+}
+.transaction-warning>h3{
+  color: #0C5EA8;
+  font-size: 2em;
+  font-weight: 400;
+}
+.transaction-warning>strong{
+  color:#EB7C3F;
+  text-transform: uppercase
 }
