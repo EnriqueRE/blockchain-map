@@ -4,9 +4,10 @@ import { TimeHeader } from './TimeHeader/TimeHeader';
 import { Map } from './Map/Map';
 import { Timeline } from './Timeline/Timeline';
 
-
 class App extends Component {
+
   render() {
+    loadScript("https://maps.googleapis.com/maps/api/js?key=AIzaSyB4zh7f42nXFEssbWNqFsVVoRaaxpoF0Jk&callback=initMap");
     return (
       <div className="App container">
         <div className="row">
@@ -20,14 +21,23 @@ class App extends Component {
             {' '}
             <Timeline />{' '}
           </div>{' '}
-          <div className="col col-sm-12, col-md-6, col-lg-6">
-            {' '}
-            <Map />{' '}
-          </div>{' '}
+          <div className="col col-sm-12, col-md-6, col-lg-6"> 
+          <Map />
+          </div> 
         </div>{' '}
       </div>
     );
   }
+
+}
+
+function loadScript(url) {
+  var index  = window.document.getElementsByTagName("script")[0]
+  var script = window.document.createElement("script")
+  script.src = url
+  script.async = true
+  script.defer = true
+  index.parentNode.insertBefore(script, index)
 }
 
 export default App;
