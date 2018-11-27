@@ -39,17 +39,19 @@ export class Timeline extends Component {
         transport: 'Gamma Carrier',
         type: 'regular',
         invoice: true,
+        invoiceFile: '/documents/Shipment35191.pdf',
         warning: false,
         warningContent: {}
       },
       {
         title: 'Invoice generated',
         date: this.getDate(2),
-        message: 'Invoice xxxx sent to customer.',
+        message: 'Invoice 91388 sent to customer.',
         transport: 'Batery Producer',
         type: 'regular',
         invoice: true,
         warning: false,
+        invoiceFile: '/documents/Invoice91388_SO90342.pdf',
         warningContent: {}
       },
       {
@@ -99,16 +101,18 @@ export class Timeline extends Component {
         transport: 'Vision',
         type: 'regular',
         invoice: true,
+        invoiceFile:'/documents/SalesOrder90342.pdf',
         warning: false,
         warningContent: {}
       },
       {
         title: 'Purchase Order',
         date: this.getDate(3),
-        message: 'Purchase Order 97774 created.',
+        message: 'Purchase Order 163520 created.',
         transport: 'Computer Services and Rentals',
         type: 'regular',
         invoice: true,
+        invoiceFile:'/documents/PurchaseOrder163520.pdf',
         warning: false,
         warningContent: {}
       },
@@ -119,16 +123,18 @@ export class Timeline extends Component {
         transport: 'Vision',
         type: 'regular',
         invoice: true,
+        invoiceFile:'/documents/PurchaseOrder163520.pdf',
         warning: false,
         warningContent: {}
       },
       {
         title: 'Shipment Delivered',
         date: this.getDate(3),
-        message: 'Shipment 9100 delivered. Lot #LOT-20001 .',
+        message: 'Shipment 35191 delivered. Lot #LOT-20001 .',
         transport: 'Gamma Carrier',
         type: 'regular',
         invoice: true,
+        invoiceFile:'/documents/Shipment35191.pdf',
         warning: false,
         warningContent: {}
       },
@@ -348,7 +354,7 @@ export class Timeline extends Component {
           <div className="shipment-container">
             {(() => {
               if(entry.invoice){
-                return <p className="shipment-status">{entry.title} <FontAwesomeIcon icon={faFileAlt} className="status-icon"/></p>
+                return <p className="shipment-status">{entry.title} <a onClick={(e)=>window.open(entry.invoiceFile, "_blank")}><FontAwesomeIcon icon={faFileAlt} className="status-icon"/></a></p>
               }else{
                 return <p className="shipment-status">{entry.title}</p>
               }
