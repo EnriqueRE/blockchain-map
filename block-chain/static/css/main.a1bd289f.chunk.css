@@ -1,0 +1,178 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, Courier New, monospace
+}
+
+.App {
+  text-align: center
+}
+
+.App-logo {
+  -webkit-animation: App-logo-spin 20s linear infinite;
+  animation: App-logo-spin 20s linear infinite;
+  height: 40vmin
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: #fff
+}
+
+.App-link {
+  color: #61dafb
+}
+
+.fixed-height {
+  height: 740px
+}
+
+.overflowed {
+  overflow-y: scroll
+}
+
+@-webkit-keyframes App-logo-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+
+@keyframes App-logo-spin {
+  0% {
+    -webkit-transform: rotate(0deg);
+    transform: rotate(0deg)
+  }
+
+  to {
+    -webkit-transform: rotate(1turn);
+    transform: rotate(1turn)
+  }
+}
+
+.time-header {
+  text-align: right
+}
+
+.time-header,
+strong {
+  color: #6d6d6d
+}
+
+ul.timeline {
+  list-style-type: none;
+  position: relative
+}
+
+ul.timeline:before {
+  content: " ";
+  background: #4472c4;
+  display: inline-block;
+  position: absolute;
+  left: 29px;
+  width: 2px;
+  height: 100%;
+  z-index: 400
+}
+
+ul.timeline>li {
+  margin: 20px 0;
+  padding-left: 20px
+}
+
+ul.timeline>li:before {
+  content: " ";
+  background: #fff;
+  display: inline-block;
+  position: absolute;
+  border-radius: 50%;
+  border: 3px solid #4472c4;
+  left: 20px;
+  width: 20px;
+  height: 20px;
+  z-index: 400
+}
+
+.shipment-container {
+  text-align: left;
+  padding: .5em
+}
+
+.shipment-status {
+  font-weight: 700;
+  font-size: 1.2em;
+  margin: .2em 0
+}
+
+.status-icon {
+  color: #0c5ea8
+}
+
+.shipment-date {
+  font-size: .9em;
+  color: #a6a6a6;
+  margin-bottom: .2em
+}
+
+.shipment-details {
+  font-size: .75em;
+  color: #7f7f7f;
+  margin-bottom: .2em;
+  font-style: italic
+}
+
+.shipment-container.container-warning {
+  background-color: #fbe5d6
+}
+
+.shipment-container.container-warning>.shipment-status {
+  color: #c8611a
+}
+
+.transaction-warning {
+  background: #f7ece6;
+  padding: .2em .5em
+}
+
+.transaction-warning>h3 {
+  color: #0c5ea8;
+  font-size: 2em;
+  font-weight: 400
+}
+
+.transaction-warning>strong {
+  color: #eb7c3f;
+  text-transform: uppercase
+}
+
+@-moz-document url-prefix() {
+  .fixed-height {
+    height: 740px;
+    min-height: 0;
+  }
+  
+  .overflowed {
+    overflow-y: scroll;
+    height: 740px;
+  }
+  
+}
+
+/*# sourceMappingURL=main.a1bd289f.chunk.css.map */
