@@ -1,3 +1,26 @@
+# Blockchain Transactions Map App
+
+## Introduction
+This is a simple application page designed to showcase the Block-chain transactions or integration with Fusion, *note this is not a live application, all the content is static*.
+
+## Libraries Used
+We've kept the libraries used to a minimum using [Create React App](https://facebook.github.io/create-react-app/) as our base and then adding [Font Awesome](https://fontawesome.com/) for iconography
+## Getting the code
+
+## Application Structure
+
+## Testing
+
+## Deploying
+
+## Debugging
+
+## Customization
+
+## Known Issues
+
+
+
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
